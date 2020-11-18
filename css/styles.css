@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -70px, center;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 30px auto;
+}
+
+.logo img {
+  width: 220px;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 70px;
+}
+
+.illustration-img {
+  margin-right: 20px;
+}
+
+.text-content {
+  margin-left: 20px;
+  font-size: 1.4rem;
+}
+
+.text-content p {
+  font-size: 1.12rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.register-btn {
+  width: 195px;
+  height: 51px;
+  background-color: #fff;
+  color:  hsl(257, 40%, 49%);
+  border: transparent;
+  border-radius: 90px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.45);
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  background-color:hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 10px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: hsl(300, 69%, 71%);
+  border: 2px solid hsl(300, 69%, 71%);
+}
+
+.attribution {
+  font-size: .85rem;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(300, 100%, 80%);
+}
+
+@media (max-width: 376px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: left -5px top 2px;
+  }
+
+  .container {
+    margin: 40px auto;
+    padding: 0 6%;
+  }
+
+  .logo img {
+    width: 43%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    margin-top: 45px;
+  }
+  
+  .illustration-img img {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 9px;
+  }
+
+  .text-content {
+    font-size: .7rem;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .text-content .register-btn {
+    width: 180px;
+    height: 40px;
+    font-size: .8rem;
+  }
+
+  .text-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .text-content p {
+    font-size: 1.05rem;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 60px;
+    padding-left: 0;
+  }
+
+  .social-links a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .attribution {
+    font-size: .75rem;
+    margin: 0 auto 20px;
+  }
+}
